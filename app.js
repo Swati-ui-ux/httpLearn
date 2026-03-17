@@ -3,13 +3,15 @@ const http = require("http")
 const server = http.createServer((req, res) => {
     console.log("server created")
     res.setHeader("Content-Type", "text/html")
-    if (req.url === "/") {
-        res.statusCode=200
-    res.end("<h1>Hello </h1>")
+    let url = req.url;
+    
+    if (url === "/") {
+       
+        res.end("<form><label>Name :</label> <input type='text' name='input'/> <button>Add</button></form > ")
     
     } else {
         res.statusCode = 200
-        if (req.url === "/pizza") {
+        if (url === "/pizza") {
         res.end("<h1>This is your pizza</h1>")
         } else {
             res.statusCode = 404
