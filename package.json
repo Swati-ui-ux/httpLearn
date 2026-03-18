@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Swati-ui-ux/httpLearn/issues"
   },
-  "homepage": "https://github.com/Swati-ui-ux/httpLearn#readme"
+  "homepage": "https://github.com/Swati-ui-ux/httpLearn#readme",
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
